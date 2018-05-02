@@ -1,0 +1,20 @@
+- name: DropIt
+  image: dropit-preview.png
+  external: http://www.dropit.us/
+  short_description: Drag 'n Drop Image Upload & Sharing
+  github_id: dropit
+  published: true
+
+- name: SMS Weather Alerts
+  image: swa-preview.png
+  external: http://swa.tmelliottjr.com/
+  short_description: Daily Forecasts Sent Directly to Your Phone
+  github_id: weatheralerter
+  published: true
+
+- name: Not Quite Discord
+  image: nqd-preview.png
+  external: http://nqd.tmelliottjr.com
+  short_description: Chat Application with a Familiar Look & Feel
+  github_id: not-quite-discord
+  published: true

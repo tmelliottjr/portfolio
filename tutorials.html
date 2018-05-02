@@ -1,0 +1,9 @@
+---
+title: Tutorials
+layout: default
+name: tutorials
+---
+
+{% for cat in site.categories["tutorial"] %}
+{{ cat.title | slugize }}
+{% endfor %}

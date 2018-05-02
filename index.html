@@ -1,0 +1,60 @@
+---
+title: Full Stack Developer
+layout: default
+header: main
+name: home
+---
+
+<main>
+  <section class="about">
+      <h1 class="section-title">about me</h1>
+      <p>
+          I'm Tom, a full stack developer from Rhode Island. I am fascinated with technology and the challenge of learning new and interesting things. I'm married to my beautiful wife Ashley, and father of an awesome little guy who is definitely much cooler than I am!
+      </p>
+      <p>    
+          By day I design, develop, and implement vertical specific ERP software solutions, but at night I spend my time exploring all things web development. I've been developing software for over 5 years, but recently have found that my true passion lies in the World Wide Web.
+      </p>
+      <p>
+          There's alot of exciting and quickly changing tech to learn out there, so I hope this website can be used to help facilitate my journey and as a tool to help convey my passion to others and perhaps share some neat stuff along the way!
+      </p>
+      <p>
+          I'm always excited for new opportunities and value constructive feedback. If there is anything you want to share with me, feel free to drop a line! 
+      </p>
+  </section>
+  <section class="projects-container">
+      <a class="anchor" id="projects"></a>
+      <h1 class="section-title">recent projects</h1>
+      <div class="projects">
+      {% for project in site.data.projects limit:3 %} 
+      {% if project.published %}
+        <div class="project">
+          <div class="project-preview">
+              <a href="{{ project.external }}" target="_blank">
+                  <img src="{{ site.assets }}{{ project.image }}" alt="{{site.name}} Preview" class="project-img">
+              </a>
+          </div>
+          <div class="project-synopsis">
+                <div class="project-title">
+                        <span> {{ project.name }}</span>
+                        <a class="social-link dark" href="{{ site.github_url }}{{ project.github_id }}" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>    
+                    </div>
+                    <div class="project-description">
+                        <span>{{ project.short_description }}</span>
+                    </div>
+                    <!-- <div class="project-tags">
+                          <i class="fab fa-node fa-2x"></i>
+                          <i class="fab fa-vuejs fa-2x"></i>
+                      </div> -->
+          </div>
+      </div>    
+      {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  <section class="tutorials">
+      <h1 class="section-title">latest tutorials</h1>
+      Coming Soon!
+  </section>
+</main>

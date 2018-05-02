@@ -1,0 +1,9 @@
+- name: home
+  url: /
+  title: Full Stack Developer
+- name: projects
+  url: /projects.html
+  title: Projects
+- name: tutorials
+  url: /tutorials.html
+  title: Tutorials
