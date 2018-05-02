@@ -9,6 +9,10 @@ html, body {
   /* overflow-x: hidden; */
 }
 
+h3 {
+  margin: 0;
+}
+
 h1 {
   font-size: 40px;
 }
@@ -29,6 +33,11 @@ section {
   position:relative;
   display:inline-block;
   border-bottom: dotted 1px #333;
+}
+
+
+.dark{
+  color: #333;
 }
 
 
@@ -210,10 +219,6 @@ header{
   align-items: center;
 }
 
-.dark{
-  color: #333;
-}
-
 .footer{
   grid-column: 1 / 4;
   height: 120px;
@@ -278,7 +283,6 @@ a {
   transform: scaleX(1);
 }
 
-
 .nav-link:hover:after{
   transform: scaleX(1);
 }
@@ -332,9 +336,12 @@ a {
 }
 
 .project-description {
-  text-align: center;
   font-size: 14px;
   color: #7d7d7d;
+}
+
+.center-text {
+  text-align: center;
 }
 
 .project-img {
@@ -366,6 +373,23 @@ a {
   cursor: pointer;
   z-index: 10;
 }
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.project-item-link:hover {
+  color: #6398bb;
+}
+
+.project-item-link {
+  font-size: 18px;
+  width: fit-content;
+}
+
 
 main{
   grid-column: 1 / 4;
