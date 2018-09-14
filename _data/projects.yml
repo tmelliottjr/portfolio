@@ -18,3 +18,10 @@
   short_description: Chat Application with a Familiar Look & Feel
   github_id: not-quite-discord
   published: true
+
+- name: Vandegraaf
+  image: nqd-preview.png
+  external: https://github.com/tmelliottjr/vandegraaf
+  short_description: Static Site Generator
+  github_id: vandegraaf
+  published: false
