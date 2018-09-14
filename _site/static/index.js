@@ -25,7 +25,8 @@ function menuToggle() {
 
 // Scroll Handler
 function scrollHandler() {
-  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollTop =
+    document.documentElement.scrollTop || document.body.scrollTop;
 
   if (document.querySelector('#menu-button').classList.contains('expand')) {
     menuToggle();

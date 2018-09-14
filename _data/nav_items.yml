@@ -4,6 +4,6 @@
 - name: projects
   url: /projects.html
   title: Projects
-- name: tutorials
-  url: /tutorials.html
-  title: Tutorials
+- name: contact
+  url: /contact.html
+  title: Contact

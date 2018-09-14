@@ -1,13 +1,16 @@
 ---
-title: All Projects
+title: projects
 layout: default
-name: all projects
+name: projects
+hero: innovation.svg
 ---
-<ul class="project-list">
-  {% for project in site.data.projects %}
-  <li class="project-item">
-    <a href="{{ project.external }}" class="project-item-link dark" >{{ project.name }}</a>
-    <span class="project-description">{{ project.short_description }}</span>
-    {% endfor %}
-  </li>
-</ul>
+<section class="all-projects">
+  <ul class="project-list">
+    {% for project in site.data.projects %}
+    <li class="project-item">
+      <a href="{{ project.external }}" class="project-item-link dark">{{ project.name }}</a>
+      <span class="project-description">{{ project.short_description }}</span>
+      {% endfor %}
+    </li>
+  </ul>
+</section>
