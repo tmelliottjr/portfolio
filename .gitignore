@@ -4,6 +4,7 @@
 /idea/*
 .idea/*
 
+
 ### JetBrains ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
@@ -156,6 +157,7 @@ typings/
 
 # dotenv environment variables file
 .env
+_site
 
 
 ### WebStorm ###
