@@ -6,7 +6,10 @@ hero: algorithm.svg
 ---
 
 <section class="contact-form">
-  <form name="contact" method="POST" netlify>
+  <form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+    <p class="hidden">
+      <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </p>
     <p class="form-group">
       <label>Name: </label>
       <input type="text" name="name" />
@@ -19,6 +22,7 @@ hero: algorithm.svg
       <label>Message: </label>
       <textarea name="message"></textarea>
     </p>
+    <div data-netlify-recaptcha></div>
     <p>
       <button type="submit">Send</button>
     </p>

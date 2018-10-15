@@ -460,6 +460,10 @@ main {
     'tutorials tutorials tutorials';
 }
 
+textarea {
+  resize: vertical;
+}
+
 a.anchor {
   display: block;
   position: relative;
