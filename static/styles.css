@@ -56,20 +56,31 @@ textarea {
   outline-color: #2565a0;
   outline-width: 2px;
   font-family: inherit;
+  border: 1px solid #6b9eb263;
 }
 
 button {
+  transition: background-color 1s ease;
+  cursor: pointer;
   font-size: 16px;
+  border: 1px solid #6b9eb263;
   outline-color: #2565a0;
   outline-width: 2px;
+  outline-offset: -2px;
   height: 35px;
   width: 70px;
+}
+
+button:hover {
+  background-color: #afdbf5;
 }
 
 textarea {
   height: 125px;
   width: 350px;
+  resize: vertical;
 }
+
 .form-group > label {
   font-size: 18px;
   margin-bottom: 5px;
@@ -458,10 +469,6 @@ main {
     'about about about'
     'projects projects projects'
     'tutorials tutorials tutorials';
-}
-
-textarea {
-  resize: vertical;
 }
 
 a.anchor {
