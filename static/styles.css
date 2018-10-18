@@ -50,6 +50,7 @@ section {
 
 input,
 textarea {
+  -webkit-appearance: none;
   height: 25px;
   width: 275px;
   font-size: 16px;
@@ -58,7 +59,6 @@ textarea {
   font-family: inherit;
   border: 1px solid #6b9eb263;
   border-radius: 0;
-  -webkit-appearance: none;
 }
 
 button {
