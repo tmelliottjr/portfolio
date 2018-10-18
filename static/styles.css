@@ -58,6 +58,7 @@ textarea {
   font-family: inherit;
   border: 1px solid #6b9eb263;
   border-radius: 0;
+  -webkit-appearance: none;
 }
 
 button {
