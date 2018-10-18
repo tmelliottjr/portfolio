@@ -57,6 +57,7 @@ textarea {
   outline-width: 2px;
   font-family: inherit;
   border: 1px solid #6b9eb263;
+  border-radius: 0;
 }
 
 button {
