@@ -71,10 +71,11 @@ button {
   outline-offset: -2px;
   height: 35px;
   width: 70px;
+  background-color: #b3cbe0;
 }
 
 button:hover {
-  background-color: #afdbf5;
+  background-color: #4195dc8c;
 }
 
 textarea {
