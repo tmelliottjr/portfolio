@@ -20,6 +20,7 @@
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
+    "atob": "^2.1.2",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0"
   }
