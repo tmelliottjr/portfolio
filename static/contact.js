@@ -11,7 +11,8 @@ contactForm.addEventListener('submit', contactFormHandler);
 function contactFormHandler(e) {
   e.preventDefault();
 
-  const formData = new FormData(contactForm);
-  console.log(new URLSearchParams(formData).toString());
-  fetch('/contact', { method: 'POST' }).then(console.log('we did it!!'));
+  const formData = new URLSearchParams(new FormData(contactForm));
+  fetch('/contact', { method: 'POST', body: formData }).then(
+    console.log('we did it!!'),
+  );
 }
