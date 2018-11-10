@@ -2,10 +2,10 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './static/index.js',
+  entry: { main: './static/index.js', contact: './static/contact.js', menu: './static/menu.js' },
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js',
+    filename: '[name].js',
     publicPath: '/build/',
   },
   module: {

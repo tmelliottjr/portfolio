@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/build/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -117,6 +117,16 @@ document.querySelector('#menu-button').addEventListener('click', function () {
   menuToggle();
 });
 
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(0);
+
+// Tagline sequencer
 var taglines = ['developer', 'husband', 'father'];
 var tagline = document.querySelector('.self-tag');
 var index = 0;
@@ -141,4 +151,4 @@ setInterval(function () {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=bundle.js.map
+//# sourceMappingURL=main.js.map
