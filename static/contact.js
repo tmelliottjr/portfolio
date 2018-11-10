@@ -13,7 +13,9 @@ function contactFormHandler(e) {
 
   const formData = new URLSearchParams(new FormData(contactForm));
   fetch('/contact', { method: 'POST', body: formData })
-    .then(console.log('we did it!!'))
+    .then(r => {
+      console.log(r);
+    })
     .catch(e => {
       console.log(e);
     });
