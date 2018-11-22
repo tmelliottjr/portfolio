@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="{{ site.name }} | {{ page.title }}">
 
     <title>{{ site.name }} | {{ page.title }}</title>
-    <link rel="shortcut icon" type="image/png" href="static/assets/favicon.png">
+    <link rel="shortcut icon" type="image/png" href={{ "static/assets/favicon.png" | relative_url }}>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href={{ "static/styles.css" | relative_url }} rel="stylesheet">
 </head>
