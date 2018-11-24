@@ -4,6 +4,7 @@
   short_description: Drag 'n Drop Image Upload & Sharing
   github_id: dropit
   published: true
+  tech: JavaScript, Node.js, GCS, MySQL, NGINX, Express, Vue, Bootstrap
 
 - name: SMS Weather Alerts
   image: swa-preview.png
@@ -11,6 +12,7 @@
   short_description: Daily Forecasts Sent Directly to Your Phone
   github_id: weatheralerter
   published: true
+  tech: JavaScript, Python, Flask, NGINX, Twilio, Vue
 
 - name: Not Quite Discord
   image: nqd-preview.png
@@ -18,10 +20,20 @@
   short_description: Chat Application with a Familiar Look & Feel
   github_id: not-quite-discord
   published: true
+  tech: JavaScript, Node.js, NGINX, Socket.IO, Express, Vue
 
 - name: Vandegraaf
   image: nqd-preview.png
   external: https://github.com/tmelliottjr/vandegraaf
-  short_description: Static Site Generator
+  short_description: Node.js Static Site Generator
   github_id: vandegraaf
   published: false
+  tech: Node.js
+
+- name: tomelliott.io
+  image: 
+  external: https://github.com/tmelliottjr/portfolio
+  short_description: This Website
+  github_id: portfolio
+  published: false
+  tech: JavaScript, Jekyll, Netlify
