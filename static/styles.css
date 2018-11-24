@@ -11,7 +11,7 @@ body {
 }
 
 .all-projects {
-  margin-top: 50px;
+  margin: 50px 20px;
   grid-column: 1/4;
 }
 
