@@ -8,7 +8,7 @@
 
 - name: SMS Weather Alerts
   image: swa-preview.png
-  external: http://swa.tmelliottjr.com/
+  external: http://swa.tomelliott.io/
   short_description: Daily Forecasts Sent Directly to Your Phone
   github_id: weatheralerter
   published: true
@@ -16,7 +16,7 @@
 
 - name: Not Quite Discord
   image: nqd-preview.png
-  external: http://nqd.tmelliottjr.com
+  external: http://nqd.tomelliott.io
   short_description: Chat Application with a Familiar Look & Feel
   github_id: not-quite-discord
   published: true
