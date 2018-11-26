@@ -10,7 +10,7 @@ script: menu.js
   <ul class="project-list">
     {% for project in site.data.projects %}
     <li class="project-item">
-      <a href="{{ project.external }}" class="project-item-link dark">{{ project.name }}</a>
+      <a href="{{ project.external }}" class="project-item-link">{{ project.name }}</a>
       <span class="project-description">{{ project.short_description }}</span>
       <span class="project-tech-used">{{project.tech}}</span>
       {% endfor %}

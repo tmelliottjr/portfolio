@@ -299,7 +299,8 @@ a {
 }
 
 .social-link:hover {
-  color: #6398bb;
+  /* color: #6398bb; */
+  color: #ffa400;
 }
 
 .self-tag {
@@ -471,6 +472,7 @@ a {
 .project-item-link {
   font-size: 24px;
   width: fit-content;
+  color: #ffa400;
 }
 
 main {
