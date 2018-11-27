@@ -212,7 +212,7 @@ header {
 }
 
 .hidden {
-  opacity: 0;
+  display: none;
 }
 
 #full-name {
