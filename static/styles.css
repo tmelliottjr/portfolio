@@ -295,7 +295,7 @@ header {
   flex-direction: column;
   align-items: center;
   align-self: end;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   background-color: #496a88;
 }
