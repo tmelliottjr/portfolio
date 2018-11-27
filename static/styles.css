@@ -212,8 +212,10 @@ header {
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
 }
+
+.nodisplay
 
 #full-name {
   margin: 0;
