@@ -274,6 +274,12 @@ header {
   justify-self: flex-end;
 }
 
+.social-links-footer {
+  display: flex;
+  width: 115px;
+  justify-content: space-around;
+}
+
 .nav-container {
   width: 75%;
   height: 100%;
@@ -284,12 +290,12 @@ header {
 
 .footer {
   grid-column: 1 / 4;
-  height: 120px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: end;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
   background-color: #496a88;
 }
