@@ -215,7 +215,9 @@ header {
   opacity: 0;
 }
 
-.nodisplay
+.nodisplay{
+  display: none;
+}
 
 #full-name {
   margin: 0;
