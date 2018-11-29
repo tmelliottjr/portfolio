@@ -215,7 +215,7 @@ header {
   opacity: 0;
 }
 
-.nodisplay{
+.nodisplay {
   display: none;
 }
 
@@ -258,9 +258,7 @@ header {
   align-items: center;
   justify-content: center;
   z-index: 11;
-}
-
-.nav {
+  border-bottom: 1px solid #ffa400;
   position: fixed;
   color: rgb(236, 236, 236);
   background-color: #333;
