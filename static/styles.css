@@ -401,6 +401,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+  /* work around for chromium bug introduced in v72 issue 927066 */
+  min-height: 0;
 }
 
 .contact-form-success {
