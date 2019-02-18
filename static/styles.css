@@ -4,10 +4,10 @@ body {
   margin: 0;
   height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
   color: #333;
-  background-color: #f1f1f1;
+  background-color: #fff;
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
 }
 
 .all-projects {
@@ -24,6 +24,7 @@ ul {
 }
 h3 {
   margin: 0;
+  font-weight: 300;
 }
 
 h1 {
@@ -38,6 +39,11 @@ section {
   margin-bottom: 50px;
 }
 
+section > p {
+  color: #777777;
+  font-weight: 300;
+}
+
 .section-title {
   text-align: center;
   font-size: 40px;
@@ -49,14 +55,20 @@ section {
   flex-direction: column;
 }
 
+label {
+  font-weight: 400;
+}
+
 input,
 textarea {
   -webkit-appearance: none;
   height: 25px;
   width: 275px;
   font-size: 16px;
+  font-weight: inherit;
   outline-color: #2565a0;
   outline-width: 2px;
+  background-color: #fcfeff;
   font-family: inherit;
   border: 1px solid #6b9eb263;
   border-radius: 0;
@@ -82,7 +94,7 @@ button:hover {
 textarea {
   height: 125px;
   width: 350px;
-  resize: vertical;
+  resize: none;
 }
 
 .form-group > label {
@@ -163,11 +175,6 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
 }
 
 .avatar {
@@ -197,11 +204,6 @@ header {
 }
 
 .brand {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
   display: flex;
   align-items: center;
   justify-self: flex-start;
@@ -312,7 +314,7 @@ a {
 }
 
 .self-tag {
-  transition: all 2s ease;
+  transition: opacity 2s ease;
   font-size: 18px;
   color: #f1f1f1;
   opacity: 1;
@@ -427,10 +429,12 @@ a {
   justify-content: space-between;
   padding: 0 20px 0 20px;
   font-size: 18px;
+  font-weight: 400;
 }
 
 .project-description {
   font-size: 14px;
+  font-weight: 200;
   color: #7d7d7d;
 }
 
@@ -482,6 +486,7 @@ a {
 
 .project-item-link {
   font-size: 24px;
+  font-weight: 400;
   width: fit-content;
   color: #ffa400;
 }
