@@ -4,7 +4,7 @@ body {
   margin: 0;
   height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #333;
   background-color: #fff;
   scroll-behavior: smooth;
@@ -42,6 +42,7 @@ section {
 section > p {
   color: #777777;
   font-weight: 300;
+  line-height: 1.5;
 }
 
 .section-title {
@@ -324,6 +325,7 @@ a {
   justify-self: center;
   display: flex;
   width: 200px;
+  font-weight: 300;
   justify-content: space-around;
   -webkit-transition: opacity 0.25s ease;
   -moz-transition: opacity 0.25s ease;
@@ -383,7 +385,7 @@ a {
 
 .project {
   width: 300px;
-  height: 240px;
+  min-height: 240px;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -429,13 +431,15 @@ a {
   justify-content: space-between;
   padding: 0 20px 0 20px;
   font-size: 18px;
-  font-weight: 400;
 }
 
 .project-description {
   font-size: 14px;
-  font-weight: 200;
   color: #7d7d7d;
+}
+
+.project .project-description {
+  padding: 0 10px;
 }
 
 .center-text {

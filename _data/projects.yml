@@ -1,3 +1,19 @@
+- name: Not Quite Discord
+  image: nqd-preview.png
+  external: http://nqd.tomelliott.io
+  short_description: A Real-Time Chat Application with a Familiar Look & Feel
+  github_id: not-quite-discord
+  published: true
+  tech: JavaScript, Node.js, NGINX, Socket.IO, Express, Vue
+
+- name: Not Quite Trello
+  image: nqt-preview.png
+  external: https://nqt.tomelliott.io
+  short_description: A Lightweight Trello Clone
+  github_id: Not-Quite-Trello
+  published: true
+  tech: JavaScript, React, Redux
+
 - name: DropIt
   image: dropit-preview.png
   external: http://www.dropit.us/
@@ -11,21 +27,13 @@
   external: http://swa.tomelliott.io/
   short_description: Daily Forecasts Sent Directly to Your Phone
   github_id: weatheralerter
-  published: true
+  published: false
   tech: JavaScript, Python, Flask, NGINX, Twilio, Vue
-
-- name: Not Quite Discord
-  image: nqd-preview.png
-  external: http://nqd.tomelliott.io
-  short_description: Chat Application with a Familiar Look & Feel
-  github_id: not-quite-discord
-  published: true
-  tech: JavaScript, Node.js, NGINX, Socket.IO, Express, Vue
 
 - name: Vandegraaf
   image: nqd-preview.png
   external: https://github.com/tmelliottjr/vandegraaf
-  short_description: Node.js Static Site Generator
+  short_description: A Node.js Static Site Generator
   github_id: vandegraaf
   published: false
   tech: Node.js
@@ -33,7 +41,7 @@
 - name: tomelliott.io
   image: 
   external: https://github.com/tmelliottjr/portfolio
-  short_description: This Website
+  short_description: You Are Here
   github_id: portfolio
   published: false
   tech: JavaScript, Jekyll, Netlify
