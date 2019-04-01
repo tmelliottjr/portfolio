@@ -76,7 +76,7 @@ button {
   outline-offset: -2px;
   height: 35px;
   width: 70px;
-  background-color: #86BAE5;
+  background-color: #86bae5;
 }
 
 button:hover {
@@ -369,24 +369,17 @@ a {
 .projects {
   display: grid;
   justify-content: center;
-  grid-template-columns: 300px 300px 300px;
-  grid-gap: 20px;
+  grid-template-columns: 400px 400px 400px;
+  grid-gap: 60px;
 }
 
 .project {
-  width: 300px;
-  min-height: 240px;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  z-index: 1;
 }
 
-.project:hover {
-  transform: scale(1.15);
+.project-img:hover {
+  transform: scale(1.05);
   z-index: 10;
 }
 
@@ -395,7 +388,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
+  padding: 20px;
   /* work around for chromium bug introduced in v72 issue 927066 */
   min-height: 0;
 }
@@ -418,9 +411,12 @@ a {
 
 .project-title {
   display: flex;
-  justify-content: space-between;
-  padding: 0 20px 0 20px;
-  font-size: 18px;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.project-name {
+  margin-right: 10px;
 }
 
 .project-description {
@@ -437,9 +433,13 @@ a {
 }
 
 .project-img {
-  width: 100%;
-  height: 175px;
+  width: 400px;
+  height: auto;
   text-align: bottom;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 1;
 }
 
 .project-tags {
@@ -509,17 +509,18 @@ a.anchor {
   height: 125px;
 }
 
-@media all and (max-width: 1025px) {
+@media all and (max-width: 1330px) {
   .projects {
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 400px 400px;
+    grid-column-gap: 60px;
     width: 100%;
     align-items: center;
   }
 }
 
-@media all and (max-width: 775px) {
+@media all and (max-width: 875px) {
   .projects {
-    grid-template-columns: 300px;
+    grid-template-columns: 400px;
     width: 100%;
     align-items: center;
   }

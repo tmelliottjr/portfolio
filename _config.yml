@@ -2,3 +2,4 @@ name: Tom Elliott
 title: Tom Elliott | Full Stack Developer
 assets: ./static/assets/
 github_url: http://www.github.com/tmelliottjr/
+host: 0.0.0.0
