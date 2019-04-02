@@ -30,11 +30,11 @@ function scrollHandler() {
     menuToggle();
   }
 
-  if (scrollTop <= scrollOffset) {
-    document.querySelector('header').classList.remove('hidden');
-  } else {
-    document.querySelector('header').classList.add('hidden');
-  }
+  // if (scrollTop <= scrollOffset) {
+  //   document.querySelector('header').classList.remove('hidden');
+  // } else {
+  //   document.querySelector('header').classList.add('hidden');
+  // }
 }
 
 // Scroll Spy
@@ -44,4 +44,8 @@ document.body.ontouchmove = scrollHandler;
 // Hamburger Menu
 document.querySelector('#menu-button').addEventListener('click', () => {
   menuToggle();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.remove('preload');
 });

@@ -24,3 +24,7 @@ setInterval(() => {
 
   tagline.style.opacity = opacity;
 }, 2000);
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.remove('preload');
+});

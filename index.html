@@ -6,31 +6,66 @@ name: home
 script: main.js
 ---
 
+
+<header>
+
+    <div class="header-content">
+        <div class="avatar avatar-lg"></div>
+        <h1 id="full-name">
+            <!-- {{include.data}} -->
+            Tom Elliott
+        </h1>
+        <span class="self-tag">developer</span>
+    </div>
+    <a class="expand" href="#about">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="50px" fill="#65ffcb" height="50px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+       <g>
+           <g id="expand-more">
+               <polygon points="270.3,58.65 153,175.95 35.7,58.65 0,94.35 153,247.35 306,94.35 		"/>
+           </g>
+       </svg>
+    </a>
+
+</header>
+<a class="anchor" id="about"></a>
 <main>
   <section class="about">
-    <h1 class="section-title">about me</h1>
-    <p>
-      I'm Tom, a full stack developer from Rhode Island. I am fascinated with
-      technology and the challenge of learning new and interesting things. I'm
-      married to my beautiful wife Ashley, and father of an awesome little guy
-      who is definitely much cooler than I am!
-    </p>
-    <p>
-      By day I design, develop, and implement software solutions for meat and
-      seafood distributors, but at night I spend my time exploring all things
-      web development. I've been developing software for over 5 years, but
-      recently have found that my true passion lies in the World Wide Web.
-    </p>
-    <p>
-      There's alot of exciting and quickly changing tech to learn out there, so
-      I hope this website can be used to help facilitate my journey and as a
-      tool to help convey my passion to others and perhaps share some neat stuff
-      along the way!
-    </p>
-    <p>
-      I'm always excited for new opportunities and value constructive feedback.
-      If there is anything you want to share with me, feel free to drop a line!
-    </p>
+    <div class="about-content">
+        <h1 class="section-title">about me</h1>
+        <p>
+            I'm Tom, a full stack developer from Rhode Island. I am fascinated with
+            technology and the challenge of learning new and interesting things. I'm
+            married to my beautiful wife Ashley, and father of an awesome little guy
+            who is definitely much cooler than I am!
+          </p>
+          <p>
+            By day I design, develop, and implement software solutions for meat and
+            seafood distributors, but at night I spend my time exploring all things
+            web development. I've been developing software for over 5 years, but
+            recently have found that my true passion lies in the World Wide Web.
+          </p>
+          <p>
+            There's alot of exciting and quickly changing tech to learn out there, so
+            I hope this website can be used to help facilitate my journey and as a
+            tool to help convey my passion to others and perhaps share some neat stuff
+            along the way!
+          </p>
+          <p>
+            I'm always excited for new opportunities and value constructive feedback.
+            If there is anything you want to share with me, feel free to drop a line!
+          </p>
+    </div>
+
+    <a class="expand" href="#projects">
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="50px" fill="#65ffcb" height="50px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+   <g>
+       <g id="expand-more">
+           <polygon points="270.3,58.65 153,175.95 35.7,58.65 0,94.35 153,247.35 306,94.35 		"/>
+       </g>
+   </svg>
+</a>
   </section>
   <section class="projects-container">
     <a class="anchor" id="projects"></a>
@@ -42,7 +77,7 @@ script: main.js
           <div class="project-title">
             <span class="project-name"> {{ project.name }}</span>
             <a
-              class="social-link dark"
+              class="social-link"
               href="{{ site.github_url }}{{ project.github_id }}"
               target="_blank"
             >

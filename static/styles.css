@@ -4,17 +4,35 @@ body {
   margin: 0;
   height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #333;
-  background-color: #fff;
+  color: #eee;
+  background-color: #1a1e24;
   scroll-behavior: smooth;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 .all-projects {
-  margin: 50px 20px;
+  margin: 60px 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column: 1/4;
 }
 
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-form {
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
   grid-column: 1/4;
 }
 
@@ -33,12 +51,8 @@ html {
   height: 100%;
 }
 
-section {
-  margin-bottom: 50px;
-}
-
 section > p {
-  color: #777777;
+  color: #c8c8c8;
   line-height: 1.5;
 }
 
@@ -58,29 +72,34 @@ textarea {
   height: 25px;
   width: 275px;
   font-size: 16px;
-  outline-color: #2565a0;
-  outline-width: 2px;
-  background-color: #fcfeff;
+  color: #ccc;
+  outline: none;
+  background-color: #293540;
   font-family: inherit;
   border: 1px solid #6b9eb263;
   border-radius: 0;
 }
 
+input:focus,
+textarea:focus,
+button:focus {
+  border: 1px solid mediumaquamarine;
+}
+
 button {
-  transition: background-color 1s ease;
+  transition: color 0.5s ease, background-color 0.5s ease;
   cursor: pointer;
   font-size: 16px;
   border: 1px solid #6b9eb263;
-  outline-color: #2565a0;
-  outline-width: 2px;
-  outline-offset: -2px;
+  outline: none;
   height: 35px;
   width: 70px;
-  background-color: #86bae5;
+  color: #ccc;
+  background-color: transparent;
 }
 
 button:hover {
-  background-color: #719abd;
+  background-color: rgba(102, 205, 171, 0.603);
 }
 
 textarea {
@@ -157,26 +176,39 @@ textarea {
 }
 
 header {
-  margin-top: 59px;
+  position: relative;
+  margin-top: 60px;
   grid-row: 1;
   grid-column: 1/4;
   width: 100%;
-  height: 225px;
-  background-color: #719abd;
+  height: calc(100vh - 60px);
+  background-color: #293540;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
 }
 
+.header-content {
+  margin-top: 50px;
+}
+
+/* .expand {
+  position: absolute;
+  bottom: 15px;
+  margin-left: -25px;
+  left: 50%;
+} */
+
 .avatar {
   margin: 0 auto;
-  border: solid 1px #444;
-  background: url('./assets/me.jpeg');
+  border: solid 1px #3d3d44;
+  background: url('./assets/me.png');
   background-size: cover;
-  -webkit-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  background-position-y: center;
+  /* -webkit-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); */
 }
 
 .avatar-sm {
@@ -190,8 +222,8 @@ header {
 }
 
 .avatar-lg {
-  height: 125px;
-  width: 125px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
 }
 
@@ -252,10 +284,11 @@ header {
   align-items: center;
   justify-content: center;
   z-index: 11;
-  border-bottom: 1px solid #ffa400;
+  /* border-bottom: 1px solid #ffa400; */
   position: fixed;
   color: rgb(236, 236, 236);
-  background-color: #333;
+  /* background-color: #333; */
+  background-color: #242933;
   -webkit-transition: padding-bottom 0.25s ease;
   -moz-transition: padding-bottom 0.25s ease;
   -ms-transition: padding-bottom 0.25s ease;
@@ -268,6 +301,10 @@ header {
   width: 115px;
   justify-content: space-around;
   justify-self: flex-end;
+}
+.social-link {
+  color: #eee;
+  transition: color 0.25s ease;
 }
 
 .social-links-footer {
@@ -293,7 +330,8 @@ header {
   align-self: end;
   justify-content: space-evenly;
   width: 100%;
-  background-color: #719abd;
+  /* background-color: #719abd; */
+  background-color: #242933;
 }
 
 a {
@@ -302,7 +340,7 @@ a {
 
 .social-link:hover {
   /* color: #6398bb; */
-  color: #ffa400;
+  color: #65ffcb;
 }
 
 .self-tag {
@@ -337,10 +375,23 @@ a {
 .nav-link:after {
   content: '';
   height: 2px;
-  background-color: #719abd;
+  /* background-color: #719abd; */
+  background-color: #65ffcb;
   display: block;
   width: 110%;
   margin-left: -5%;
+  transform: scaleX(0);
+  transition: all 0.25s ease;
+}
+
+.project-item-link:after {
+  content: '';
+  height: 2px;
+  /* background-color: #719abd; */
+  background-color: #65ffcb;
+  display: block;
+  width: 100%;
+  margin-left: 0%;
   transform: scaleX(0);
   transition: all 0.25s ease;
 }
@@ -349,13 +400,16 @@ a {
   transform: scaleX(1);
 }
 
-.nav-link:hover:after {
+.nav-link:hover:after,
+.project-item-link:hover:after {
   transform: scaleX(1);
 }
 
 .projects-container {
   grid-area: projects;
-  width: 85%;
+  width: 100%;
+  background-color: #293540;
+  min-height: calc(100vh - 160px);
 }
 
 .tutorials {
@@ -457,14 +511,31 @@ a {
 }
 
 .about {
+  min-height: calc(100vh - 60px);
   grid-area: about;
   font-size: 18px;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about > .expand {
+  margin-bottom: 80px;
 }
 
 .menu-button {
   cursor: pointer;
   z-index: 10;
+}
+
+.expand > svg {
+  transition: fill 0.25s ease;
+}
+
+.expand > svg:hover {
+  fill: lightsalmon;
 }
 
 .project-item {
@@ -475,13 +546,14 @@ a {
 }
 
 .project-item-link:hover {
-  color: #719abd;
+  color: lightsalmon;
 }
 
 .project-item-link {
   font-size: 24px;
   width: fit-content;
-  color: #ffa400;
+  color: #65ffcb;
+  transition: color 0.25s ease;
 }
 
 main {
@@ -490,7 +562,6 @@ main {
   grid-template-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 1px;
-  grid-row-gap: 1px;
   justify-items: center;
   grid-template-areas:
     'about about about'
@@ -515,6 +586,10 @@ a.anchor {
     grid-column-gap: 60px;
     width: 100%;
     align-items: center;
+  }
+
+  .about > .expand {
+    display: none;
   }
 }
 
@@ -555,5 +630,17 @@ a.anchor {
 
   .about {
     width: 90%;
+  }
+
+  .project-img {
+    width: 375px;
+  }
+
+  .project {
+    align-items: center;
+  }
+
+  .project:last-child {
+    margin-bottom: 20px;
   }
 }

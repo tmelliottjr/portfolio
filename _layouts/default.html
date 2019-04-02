@@ -11,6 +11,7 @@
 
     gtag('config', 'UA-128421074-1');
     </script>
+        <link href={{ "static/styles.css" | relative_url }} rel="stylesheet">
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         <script defer src="../build/{{ page.script }}"></script>
 
@@ -37,10 +38,10 @@
     <title>{{ site.name }} | {{ page.title }}</title>
     <link rel="shortcut icon" type="image/png" href={{ "static/assets/favicon.png" | relative_url }}>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link href={{ "static/styles.css" | relative_url }} rel="stylesheet">
+
 </head>
 
-<body>
+<body class="preload">
     <div class="container">
         <nav class="nav box-shadow">
             <div class="nav-container">
@@ -70,21 +71,6 @@
                 </div>
             </div>
         </nav>
-        <a class="anchor" id="about"></a>
-        <header>
-            {% if page.header == "main" %}
-            <div class="header-content">
-                <div class="avatar avatar-lg"></div>
-                <h1 id="full-name">
-                    <!-- {{include.data}} -->
-                    Tom Elliott
-                </h1>
-                <span class="self-tag">developer</span>
-            </div>
-            {% else %}
-            {% include header.html hero=page.hero section_name=page.section_name %}
-            {% endif %}
-        </header>
         {{ content }}
         <footer class="footer">
             Tom Elliott | Full Stack Developer
