@@ -14,6 +14,7 @@ body {
   -moz-transition: none !important;
   -ms-transition: none !important;
   -o-transition: none !important;
+  transition: none !important;
 }
 
 .all-projects {
@@ -185,7 +186,7 @@ header {
   background-color: #293540;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
 }
 
@@ -430,6 +431,7 @@ a {
 .project {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .project-img:hover {
@@ -556,6 +558,7 @@ a {
   transition: color 0.25s ease;
 }
 
+
 main {
   grid-column: 1 / 4;
   display: grid;
@@ -595,9 +598,9 @@ a.anchor {
 
 @media all and (max-width: 875px) {
   .projects {
-    grid-template-columns: 400px;
-    width: 100%;
+    grid-template-columns: 100%;
     align-items: center;
+    justify-content: center;
   }
 
   .nav-container {
@@ -633,7 +636,7 @@ a.anchor {
   }
 
   .project-img {
-    width: 375px;
+    max-width: 90%;
   }
 
   .project {

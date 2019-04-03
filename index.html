@@ -89,13 +89,14 @@ script: main.js
           </div>
         </div>
 
-        <a href="{{ project.external }}" class="project-link" target="_blank">
-          <img
+          <a href="{{ project.external }}" class="project-link" target="_blank">
+            <img
             src="{{ site.assets }}{{ project.image }}"
             alt="{{ site.name }} Preview"
             class="project-img"
-          />
-        </a>
+            />
+          </a>
+          
       </div>
       {% endif %} {% endfor %}
     </div>
