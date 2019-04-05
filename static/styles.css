@@ -589,6 +589,7 @@ a.anchor {
     grid-column-gap: 60px;
     width: 100%;
     align-items: center;
+    margin-bottom: 30px;
   }
 
   .about > .expand {
@@ -633,6 +634,7 @@ a.anchor {
 
   .about {
     width: 90%;
+    margin-bottom: 30px;
   }
 
   .project-img {
